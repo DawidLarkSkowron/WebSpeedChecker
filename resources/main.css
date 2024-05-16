@@ -214,7 +214,7 @@ button,
 }
 
 .developer-mode {
-    border-radius: 10px;
+    border-radius: 11px;
     padding: 1rem;
     background: #602525;
     border: 3px solid rgba(255, 255, 255, 0.5);
