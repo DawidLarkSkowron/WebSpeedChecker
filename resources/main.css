@@ -1,12 +1,12 @@
 :root {
     --viewport-width: 800px;
     --viewport-height: 600px;
-    --foreground: rgb(235, 235, 235);
-    --foreground-alpha: rgba(235, 235, 235, 0.2);
-    --inactive-color: rgb(128, 128, 128);
-    --background: rgb(46, 51, 55);
-    --running-background: #f5f5f5;
-    --highlight: rgb(232, 79, 79);
+    --foreground: #212529;
+    --foreground-alpha: rgba(33, 37, 41, 0.2);
+    --inactive-color: #6c757d;
+    --background: #f8f9fa;
+    --running-background: #ffffff;
+    --highlight: #ffc107;
     --text-width: 650px;
     --metrics-line-height: 25px;
     --scrollbar-width: 10px;
@@ -188,18 +188,20 @@ button,
 .buttons button,
 .buttons .button {
     appearance: none;
-    border: 3px solid var(--foreground);
-    border-radius: 10px;
+    border: 1px solid transparent;
+    border-radius: .25rem;
     min-width: 200px;
-    padding: 5px 0px;
+    padding: .375rem .75rem;
     margin: 0 20px;
-    font-size: 25px;
-    color: var(--foreground);
-    background-color: transparent;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
     cursor: pointer;
     user-select: none;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.5;
 }
-
 .buttons button:active {
     background-color: var(--foreground);
     color: var(--background);
@@ -300,8 +302,8 @@ section {
     margin-top: calc(var(--viewport-height) / -2 - var(--padding-width) - var(--border-width));
     margin-left: calc(var(--viewport-width) / -2 - var(--padding-width) - var(--border-width));
     padding: var(--padding-width);
-    border: var(--border-width) solid var(--foreground);
-    border-radius: 20px;
+    border: none; 
+    border-radius: 70px;
 }
 
 section.visible,
@@ -590,8 +592,6 @@ section#about .note {
     position: relative;
     width: 738px;
     height: 78px;
-    background-image: -webkit-image-set(url("gauge@2x.png") 2x, url("gauge.png") 1x);
-    background-image: image-set(url("gauge@2x.png") 2x, url("gauge.png") 1x);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     margin: 0 auto;
@@ -612,7 +612,7 @@ section#about .note {
     bottom: -88px;
     width: 4px;
     height: 400px;
-    background-color: rgb(247, 148, 29);
+    background-color: rgb(255, 255, 255);
     transform: rotate(-70deg);
     transform-origin: 2px 400px;
 }
